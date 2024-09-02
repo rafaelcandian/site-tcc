@@ -1,0 +1,64 @@
+{
+  "hash": "49a051ab",
+  "configHash": "b3d7307c",
+  "lockfileHash": "a862d199",
+  "browserHash": "ca61ae99",
+  "optimized": {
+    "@angular/common": {
+      "src": "../../../../../node_modules/@angular/common/fesm2022/common.mjs",
+      "file": "@angular_common.js",
+      "fileHash": "926f762b",
+      "needsInterop": false
+    },
+    "@angular/core": {
+      "src": "../../../../../node_modules/@angular/core/fesm2022/core.mjs",
+      "file": "@angular_core.js",
+      "fileHash": "100c040f",
+      "needsInterop": false
+    },
+    "@angular/platform-browser": {
+      "src": "../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
+      "file": "@angular_platform-browser.js",
+      "fileHash": "6db21530",
+      "needsInterop": false
+    },
+    "@angular/router": {
+      "src": "../../../../../node_modules/@angular/router/fesm2022/router.mjs",
+      "file": "@angular_router.js",
+      "fileHash": "61fea76c",
+      "needsInterop": false
+    },
+    "@fortawesome/angular-fontawesome": {
+      "src": "../../../../../node_modules/@fortawesome/angular-fontawesome/fesm2022/angular-fontawesome.mjs",
+      "file": "@fortawesome_angular-fontawesome.js",
+      "fileHash": "77c97ef3",
+      "needsInterop": false
+    },
+    "@fortawesome/free-solid-svg-icons": {
+      "src": "../../../../../node_modules/@fortawesome/free-solid-svg-icons/index.es.js",
+      "file": "@fortawesome_free-solid-svg-icons.js",
+      "fileHash": "525b495b",
+      "needsInterop": false
+    },
+    "@fortawesome/free-brands-svg-icons": {
+      "src": "../../../../../node_modules/@fortawesome/free-brands-svg-icons/index.es.js",
+      "file": "@fortawesome_free-brands-svg-icons.js",
+      "fileHash": "46e7750f",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-WPVXGO36": {
+      "file": "chunk-WPVXGO36.js"
+    },
+    "chunk-XDSV7TH7": {
+      "file": "chunk-XDSV7TH7.js"
+    },
+    "chunk-GMPR55FW": {
+      "file": "chunk-GMPR55FW.js"
+    },
+    "chunk-J4B6MK7R": {
+      "file": "chunk-J4B6MK7R.js"
+    }
+  }
+}

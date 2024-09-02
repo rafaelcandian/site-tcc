@@ -1,0 +1,161 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -0.75rem;
+  margin-left: -0.75rem;
+
+}
+
+.title{
+  margin-top: 9rem;
+  margin-bottom: 7rem;
+  h1{
+    font-size: 4rem;
+    font-family: "Titillium Web";
+
+    color: #0177B9;
+    font-weight: 700;
+    span{
+      font-family: "Titillium Web";
+      color: #EB651D;
+    }
+  }
+}
+
+.col {
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+}
+
+
+body{
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+.text-white{
+  color: white;
+}
+h1{
+  margin-bottom: 0rem;
+}
+p{
+  margin-top: .3rem;
+}
+hr{
+  width: 8%;
+  float: left;
+}
+.titulo{
+  margin-top: 1.5rem;
+}
+.selecao{
+  margin-top: 5rem;
+  padding: 2rem 10%;
+}
+.plano{
+  background-color: #ffffff;
+  margin: auto;
+  margin-bottom: 5rem;
+  padding: 1.5rem;
+  width: fit-content;
+  //min-width: 50rem;
+  border-radius: 2rem;
+  text-align: center;
+  min-width: 320px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+img{
+  border-radius: .7rem;
+  margin-right: 2px;
+}
+.metricas {
+  text-align: left;
+  border-radius: 1.3rem;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  span{
+    margin-right: 1rem;
+  }
+
+}
+.nao-tem{
+  background-color: rgba(213, 213, 213, 0.81);
+}
+
+.tem{
+  //background: -webkit-linear-gradient(#d4edfa,#bcc4dd);
+  background: linear-gradient(-45deg, #76caf8, #bb6aef);
+  background-size: 400% 400%;
+  animation: gradient 5s ease infinite;
+}
+
+.sifr{
+  width: fit-content;
+}
+
+.sifrao{
+  color:#0177B9;
+  margin-left: 0;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.number{
+  color: #EB651D;
+  font-size: 3.5rem;
+  font-weight: 650;
+  margin-bottom: 2rem;
+  margin-left: 1.5rem;
+  margin-right: 3rem;
+}
+.mes{
+  color:#0177B9;
+  margin-left: 0;
+  font-size: 1.5rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.preco{
+  position: relative;
+}
+
+span{
+  font-weight: 700;
+}
+
+.anual{
+  color: #858585;
+}
+
+.titulo-plano{
+  padding: .5rem;
+  margin-bottom: 2rem;
+  border-radius: 1.5rem;
+  h1{
+
+    font-weight: 900;
+    background: linear-gradient(-45deg, #bb6aef, #76caf8);
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+  }
+}
