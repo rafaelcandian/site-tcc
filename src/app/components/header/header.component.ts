@@ -1,5 +1,8 @@
+import { isPlatformBrowser } from '@angular/common'; // Importar aqui
+
+
 import { NgOptimizedImage } from '@angular/common';
-import { Component , AfterViewInit, HostListener, Renderer2} from '@angular/core';
+import { Component , AfterViewInit, HostListener, Renderer2, Inject, PLATFORM_ID} from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faTasks } from '@fortawesome/free-solid-svg-icons';
 import { faIdCard } from '@fortawesome/free-solid-svg-icons';
@@ -32,7 +35,7 @@ export class HeaderComponent implements AfterViewInit{
   isChecked = false;
   scrollPosition = 0;
 
-  constructor(private renderer: Renderer2, public globalService: GlobalService) {}
+  constructor(private renderer: Renderer2, public globalService: GlobalService,  @Inject(PLATFORM_ID) private platformId: Object) {}
 
 
   // Acessar o valor da variável global
@@ -46,29 +49,34 @@ export class HeaderComponent implements AfterViewInit{
   }
 
   ngAfterViewInit(): void {
-    this.checkPosition();
+    if (isPlatformBrowser(this.platformId)) {
+      this.checkPosition(); // Executa apenas no navegador
+    }
   }
 
 
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
-    this.checkPosition();
-    this.scrollPosition = window.scrollY || document.documentElement.scrollTop;
-
+    if (isPlatformBrowser(this.platformId)) {
+      this.checkPosition();
+      this.scrollPosition = window.scrollY || document.documentElement.scrollTop;
+    }
   }
 
   checkPosition(): void {
-    const checkbox = this.renderer.selectRootElement('#menu', true);
-    const rect = checkbox.getBoundingClientRect();
-    console.log(this.scrollPosition)
+    if (isPlatformBrowser(this.platformId)) { // Garante que estamos no navegador
+      const checkbox = this.renderer.selectRootElement('#menu', true);
+      if (checkbox) {
+        const rect = checkbox.getBoundingClientRect();
+        console.log(this.scrollPosition);
 
-    if (this.scrollPosition <= 1.1) {
-      this.isChecked = true;
-
-    }
-    else if(this.scrollPosition >= 300){
-      this.isChecked = false;
+        if (this.scrollPosition <= 1.1) {
+          this.isChecked = true;
+        } else if (this.scrollPosition >= 300) {
+          this.isChecked = false;
+        }
+      }
     }
   }
 }
