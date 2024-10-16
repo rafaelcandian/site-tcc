@@ -1,90 +1,178 @@
+<ng-container *ngIf="globalService.getLanguage() === 'pt'; else enTemplate">
+  <div class="text-center title" id="planos">
+    <h1>Nossos <span>Planos</span></h1>
+  </div>
+  <div class="selecao">
+    <div class="row">
 
-<div class="text-center title" id="planos">
-  <h1>Nossos <span>Planos</span></h1>
-</div>
-<div class="selecao">
-  <div class="row">
+      <div class="col">
+        <div class="plano">
+          <div class="titulo-plano">
+            <h1>Mentoria Basica</h1>
+          </div>
+          <div class="metricas tem">Um site personalizado</div>
+          <div class="metricas tem">Hospedagem web</div>
+          <div class="metricas nao-tem"><span>X</span> Sistema personalizado</div>
 
-    <div class="col">
-      <div class="plano">
-        <div class="titulo-plano">
-          <h1>Mentoria Basica</h1>
-        </div>
-        <div class="metricas tem">Um site personalizado</div>
-        <div class="metricas tem">Hospedagem web</div>
-        <div class="metricas nao-tem"><span>X</span> Sistema personalizado</div>
+          <div class="metricas nao-tem"><span>X</span> Analise de desing & negocios</div>
+          <div class="metricas nao-tem"><span>X</span> Aplicativo mobile</div>
 
-        <div class="metricas nao-tem"><span>X</span> Analise de desing & negocios</div>
-        <div class="metricas nao-tem"><span>X</span> Aplicativo mobile</div>
-
-        <div class="d-flex justify-content-center">
-          <div class="preco">
-            <div class="sifr">
-              <span class="sifrao">R$</span>
-              <span class="number">450</span>
-              <span class = "mes">/mês</span>
+          <div class="d-flex justify-content-center">
+            <div class="preco">
+              <div class="sifr">
+                <span class="sifrao">R$</span>
+                <span class="number">450</span>
+                <span class = "mes">/mês</span>
+              </div>
             </div>
           </div>
+          <hr class="w-100">
+          <span class="anual">Pagamento anual: R$ 5.400,00</span>
         </div>
-        <hr class="w-100">
-        <span class="anual">Pagamento anual: R$ 5.400,00</span>
       </div>
-    </div>
 
-    <div class="col">
-      <div class="plano">
-        <div class="titulo-plano">
-          <h1>Mentoria Essêncial</h1>
-        </div>
-        <div class="metricas tem">Um site personalizado</div>
-        <div class="metricas tem">Hospedagem web</div>
-        <div class="metricas tem">Sistema personalizado</div>
+      <div class="col">
+        <div class="plano">
+          <div class="titulo-plano">
+            <h1>Mentoria Essêncial</h1>
+          </div>
+          <div class="metricas tem">Um site personalizado</div>
+          <div class="metricas tem">Hospedagem web</div>
+          <div class="metricas tem">Sistema personalizado</div>
 
-        <div class="metricas tem">Analise de desing & negocios</div>
-        <div class="metricas nao-tem"><span>X</span> Aplicativo mobile</div>
+          <div class="metricas tem">Analise de desing & negocios</div>
+          <div class="metricas nao-tem"><span>X</span> Aplicativo mobile</div>
 
-        <div class="d-flex justify-content-center">
-          <div class="preco">
-            <div class="sifr">
-              <span class="sifrao">R$</span>
-              <span class="number">880</span>
-              <span class = "mes">/mês</span>
+          <div class="d-flex justify-content-center">
+            <div class="preco">
+              <div class="sifr">
+                <span class="sifrao">R$</span>
+                <span class="number">880</span>
+                <span class = "mes">/mês</span>
+              </div>
             </div>
           </div>
+          <hr class="w-100">
+          <span class="anual">Pagamento anual: R$ 5.400,00</span>
         </div>
-        <hr class="w-100">
-        <span class="anual">Pagamento anual: R$ 5.400,00</span>
       </div>
-    </div>
 
-    <div class="col">
-      <div class="plano">
-        <div class="titulo-plano">
-          <h1>Mentoria Premium</h1>
-        </div>
-        <div class="metricas tem">Um site personalizado</div>
-        <div class="metricas tem">Hospedagem web</div>
-        <div class="metricas tem">Sistema personalizado</div>
+      <div class="col">
+        <div class="plano">
+          <div class="titulo-plano">
+            <h1>Mentoria Premium</h1>
+          </div>
+          <div class="metricas tem">Um site personalizado</div>
+          <div class="metricas tem">Hospedagem web</div>
+          <div class="metricas tem">Sistema personalizado</div>
 
-        <div class="metricas tem">Analise de desing & negocios</div>
-        <div class="metricas tem">Aplicativo mobile</div>
+          <div class="metricas tem">Analise de desing & negocios</div>
+          <div class="metricas tem">Aplicativo mobile</div>
 
-        <div class="d-flex justify-content-center">
-          <div class="preco">
-            <div class="sifr">
-              <span class="sifrao">R$</span>
-              <span class="number">1050</span>
-              <span class = "mes">/mês</span>
+          <div class="d-flex justify-content-center">
+            <div class="preco">
+              <div class="sifr">
+                <span class="sifrao">R$</span>
+                <span class="number">1050</span>
+                <span class = "mes">/mês</span>
+              </div>
             </div>
           </div>
+          <hr class="w-100">
+          <span class="anual">Pagamento anual: R$ 5.400,00</span>
         </div>
-        <hr class="w-100">
-        <span class="anual">Pagamento anual: R$ 5.400,00</span>
       </div>
+
     </div>
 
   </div>
+</ng-container>
+<ng-template #enTemplate>
+  <div class="text-center title" id="planos">
+    <h1>Our <span>Plans</span></h1>
+  </div>
+  <div class="selecao">
+    <div class="row">
 
-</div>
+      <div class="col">
+        <div class="plano">
+          <div class="titulo-plano">
+            <h1>Basic <br> Mentoring</h1>
+          </div>
+          <div class="metricas tem">A personalized website</div>
+          <div class="metricas tem">Web hosting</div>
+          <div class="metricas nao-tem"><span>X</span> Custom system</div>
 
+          <div class="metricas nao-tem"><span>X</span> Design & business analysis</div>
+          <div class="metricas nao-tem"><span>X</span> Mobile application</div>
 
+          <div class="d-flex justify-content-center">
+            <div class="preco">
+              <div class="sifr">
+                <span class="sifrao">$</span>
+                <span class="number">450</span>
+                <span class = "mes">/mon</span>
+              </div>
+            </div>
+          </div>
+          <hr class="w-100">
+          <span class="anual">Annual payment: R$ 5.400,00</span>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="plano">
+          <div class="titulo-plano">
+            <h1>Essential Mentoring</h1>
+          </div>
+          <div class="metricas tem">A personalized website</div>
+          <div class="metricas tem">Web hosting</div>
+          <div class="metricas tem">Custom system</div>
+
+          <div class="metricas tem">Design & business analysis</div>
+          <div class="metricas nao-tem"><span>X</span> Mobile application</div>
+
+          <div class="d-flex justify-content-center">
+            <div class="preco">
+              <div class="sifr">
+                <span class="sifrao">$</span>
+                <span class="number">880</span>
+                <span class = "mes">/mon</span>
+              </div>
+            </div>
+          </div>
+          <hr class="w-100">
+          <span class="anual">Annual payment: R$ 5.400,00</span>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="plano">
+          <div class="titulo-plano">
+            <h1>Premium Mentoring</h1>
+          </div>
+          <div class="metricas tem">A personalized website</div>
+          <div class="metricas tem">Web hosting</div>
+          <div class="metricas tem">Custom system</div>
+
+          <div class="metricas tem">Design & business analysis</div>
+          <div class="metricas tem">Mobile application</div>
+
+          <div class="d-flex justify-content-center">
+            <div class="preco">
+              <div class="sifr">
+                <span class="sifrao">$</span>
+                <span class="number">1050</span>
+                <span class = "mes">/mon</span>
+              </div>
+            </div>
+          </div>
+          <hr class="w-100">
+          <span class="anual">Annual payment: R$ 5.400,00</span>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</ng-template>

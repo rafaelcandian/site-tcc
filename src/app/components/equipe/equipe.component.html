@@ -1,71 +1,144 @@
+<ng-container *ngIf="globalService.getLanguage() === 'pt'; else enTemplate">
+  <div class="text-center title-1" id="equipe">
+      <h1>Conheça a <span> nossa Equipe</span></h1>
+  </div>
 
-<div class="text-center title-1" id="equipe">
-    <h1>Conheça a <span> nossa Equipe</span></h1>
-</div>
-
-<div class="main">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-        <div class="our-team">
-          <div class="picture">
-            <img class="img-fluid" ngSrc="./assets/Rafael.png"  width="100" height="100" />
+  <div class="main">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="our-team">
+            <div class="picture">
+              <img class="img-fluid" ngSrc="./assets/Rafael.png"  width="100" height="100" />
+            </div>
+            <div class="team-content">
+              <h3 class="name">Rafael A. Candian</h3>
+              <h4 class="title">Diretor de desenvolvimento</h4>
+            </div>
+            <ul class="social">
+              <li><a href="https://www.instagram.com/rafaelantoniocandian/"><fa-icon [icon]="fainsta"></fa-icon></a></li>
+              <li><a href="https://br.linkedin.com/in/rafael-candian-ab08022b2"><fa-icon [icon]="falink"></fa-icon></a></li>
+            </ul>
           </div>
-          <div class="team-content">
-            <h3 class="name">Rafael A. Candian</h3>
-            <h4 class="title">Diretor de desenvolvimento</h4>
-          </div>
-          <ul class="social">
-            <li><a href="https://codepen.io/collection/XdWJOQ/"><fa-icon [icon]="fainsta"></fa-icon></a></li>
-            <li><a href="https://codepen.io/collection/XdWJOQ/"><fa-icon [icon]="falink"></fa-icon></a></li>
-          </ul>
         </div>
-      </div>
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-        <div class="our-team">
-          <div class="picture">
-            <img class="img-fluid" ngSrc="./assets/Karina.png"  width="100" height="100" />
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="our-team">
+            <div class="picture">
+              <img class="img-fluid" ngSrc="./assets/Karina.png"  width="100" height="100" />
+            </div>
+            <div class="team-content">
+              <h3 class="name">Karina Santos</h3>
+              <h4 class="title">Diretora de Design</h4>
+            </div>
+            <ul class="social">
+              <li><a href="https://www.instagram.com/hyttp_kah/"><fa-icon [icon]="fainsta"></fa-icon></a></li>
+              <li><a href="https://codepen.io/collection/XdWJOQ/"><fa-icon [icon]="falink"></fa-icon></a></li>
+            </ul>
           </div>
-          <div class="team-content">
-            <h3 class="name">Karina Santos</h3>
-            <h4 class="title">Diretora de Design</h4>
-          </div>
-          <ul class="social">
-            <li><a href="https://codepen.io/collection/XdWJOQ/"><fa-icon [icon]="fainsta"></fa-icon></a></li>
-            <li><a href="https://codepen.io/collection/XdWJOQ/"><fa-icon [icon]="falink"></fa-icon></a></li>
-          </ul>
         </div>
-      </div>
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-        <div class="our-team">
-          <div class="picture">
-            <img class="img-fluid" ngSrc="./assets/Caio.png"  width="100" height="100" />
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="our-team">
+            <div class="picture">
+              <img class="img-fluid" ngSrc="./assets/Caio.png"  width="100" height="100" />
+            </div>
+            <div class="team-content">
+              <h3 class="name">Caio L. Camargo</h3>
+              <h4 class="title">Diretor financeiro</h4>
+            </div>
+            <ul class="social">
+              <li><a href="https://www.instagram.com/caio.kxz/"><fa-icon [icon]="fainsta"></fa-icon></a></li>
+              <li><a href="https://www.linkedin.com/in/caio-camargo-40003627b/"><fa-icon [icon]="falink"></fa-icon></a></li>
+            </ul>
           </div>
-          <div class="team-content">
-            <h3 class="name">Caio L. Camargo</h3>
-            <h4 class="title">Diretor financeiro</h4>
-          </div>
-          <ul class="social">
-            <li><a href="https://codepen.io/collection/XdWJOQ/"><fa-icon [icon]="fainsta"></fa-icon></a></li>
-            <li><a href="https://codepen.io/collection/XdWJOQ/"><fa-icon [icon]="falink"></fa-icon></a></li>
-          </ul>
         </div>
-      </div>
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-        <div class="our-team">
-          <div class="picture">
-            <img class="img-fluid" ngSrc="./assets/Samuca.png"  width="100" height="100" />
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="our-team">
+            <div class="picture">
+              <img class="img-fluid" ngSrc="./assets/Samuca.png"  width="100" height="100" />
+            </div>
+            <div class="team-content">
+              <h3 class="name">Samuel Oliveria</h3>
+              <h4 class="title">CTO</h4>
+            </div>
+            <ul class="social">
+              <li><a href="https://www.instagram.com/tiras_the_unkindled/"><fa-icon [icon]="fainsta"></fa-icon></a></li>
+              <li><a href="https://www.linkedin.com/in/samuel-oliveira-souza-a24859286/"><fa-icon [icon]="falink"></fa-icon></a></li>
+            </ul>
           </div>
-          <div class="team-content">
-            <h3 class="name">Samuel Oliveria</h3>
-            <h4 class="title">CTO</h4>
-          </div>
-          <ul class="social">
-            <li><a href="https://codepen.io/collection/XdWJOQ/"><fa-icon [icon]="fainsta"></fa-icon></a></li>
-            <li><a href="https://codepen.io/collection/XdWJOQ/"><fa-icon [icon]="falink"></fa-icon></a></li>
-          </ul>
         </div>
       </div>
     </div>
   </div>
-</div>
+</ng-container>
+<ng-template #enTemplate>
+  <div class="text-center title-1" id="equipe">
+    <h1>Meet our <span> Team</span></h1>
+  </div>
+
+  <div class="main">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="our-team">
+            <div class="picture">
+              <img class="img-fluid" ngSrc="./assets/Rafael.png"  width="100" height="100" />
+            </div>
+            <div class="team-content">
+              <h3 class="name">Rafael A. Candian</h3>
+              <h4 class="title">tech leader</h4>
+            </div>
+            <ul class="social">
+              <li><a href="https://www.instagram.com/rafaelantoniocandian/"><fa-icon [icon]="fainsta"></fa-icon></a></li>
+              <li><a href="https://br.linkedin.com/in/rafael-candian-ab08022b2"><fa-icon [icon]="falink"></fa-icon></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="our-team">
+            <div class="picture">
+              <img class="img-fluid" ngSrc="./assets/Karina.png"  width="100" height="100" />
+            </div>
+            <div class="team-content">
+              <h3 class="name">Karina Santos</h3>
+              <h4 class="title">Design Director</h4>
+            </div>
+            <ul class="social">
+              <li><a href="https://www.instagram.com/hyttp_kah/"><fa-icon [icon]="fainsta"></fa-icon></a></li>
+              <li><a href="https://codepen.io/collection/XdWJOQ/"><fa-icon [icon]="falink"></fa-icon></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="our-team">
+            <div class="picture">
+              <img class="img-fluid" ngSrc="./assets/Caio.png"  width="100" height="100" />
+            </div>
+            <div class="team-content">
+              <h3 class="name">Caio L. Camargo</h3>
+              <h4 class="title">chief financial officer</h4>
+            </div>
+            <ul class="social">
+              <li><a href="https://www.instagram.com/caio.kxz/"><fa-icon [icon]="fainsta"></fa-icon></a></li>
+              <li><a href="https://www.linkedin.com/in/caio-camargo-40003627b/"><fa-icon [icon]="falink"></fa-icon></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="our-team">
+            <div class="picture">
+              <img class="img-fluid" ngSrc="./assets/Samuca.png"  width="100" height="100" />
+            </div>
+            <div class="team-content">
+              <h3 class="name">Samuel Oliveria</h3>
+              <h4 class="title">CTO</h4>
+            </div>
+            <ul class="social">
+              <li><a href="https://www.instagram.com/tiras_the_unkindled/"><fa-icon [icon]="fainsta"></fa-icon></a></li>
+              <li><a href="https://www.linkedin.com/in/samuel-oliveira-souza-a24859286/"><fa-icon [icon]="falink"></fa-icon></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-template>

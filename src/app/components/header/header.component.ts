@@ -7,12 +7,16 @@ import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 import { faLanguage } from '@fortawesome/free-solid-svg-icons';
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 
+import { GlobalService } from '../../global.service';
+import { NgIf } from '@angular/common';
+
 @Component({
   selector: 'app-header',
   standalone: true,
   imports: [
     NgOptimizedImage,
-    FontAwesomeModule
+    FontAwesomeModule,
+    NgIf
   ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
@@ -28,7 +32,18 @@ export class HeaderComponent implements AfterViewInit{
   isChecked = false;
   scrollPosition = 0;
 
-  constructor(private renderer: Renderer2) {}
+  constructor(private renderer: Renderer2, public globalService: GlobalService) {}
+
+
+  // Acessar o valor da variável global
+  getLanguage(): string {
+    return this.globalService.getLanguage();
+  }
+
+  // Atualizar o valor da variável global
+  setLanguage(newValue: string): void {
+    this.globalService.setLanguage(newValue);
+  }
 
   ngAfterViewInit(): void {
     this.checkPosition();

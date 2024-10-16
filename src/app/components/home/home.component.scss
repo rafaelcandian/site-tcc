@@ -57,7 +57,7 @@
     width: fit-content;
     margin: auto;
     font-size: 3rem;
-    padding-top: 50%;
+    padding-top: 25%;
     text-align: center;
     height: 100vh;
 
@@ -228,5 +228,17 @@
   margin-left: 4px;
 }
 
+@media (min-width: 800px) {
+  img{
+    opacity: 0;
+  }
+}
 
+@media (max-width: 800px) {
+  img{
+    opacity: 1;
+    width: 12rem;
+    height: 12rem;
+  }
+}
 

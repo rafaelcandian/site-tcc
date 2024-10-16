@@ -1,6 +1,73 @@
-<section class="app-quem-somos" id="quem">
+<ng-container *ngIf="globalService.getLanguage() === 'pt'; else enTemplate">
+  <section class="app-quem-somos" id="quem">
+      <div class="text-center title">
+          <h1>Quem <span>Somos</span>?</h1>
+      </div>
+      <div class="information">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <p>
+
+                  A <span class="text-orange">Camale </span> <span class="text-blue"> Code</span>  nasceu do sonho de um grupo de estudantes de programação do curso técnico, que se uniram visando transformar o mercado de desenvolvimento de software.
+                <br><br>
+                Fundada com a paixão pela tecnologia e inovação, nossa empresa se destaca pela capacidade de adaptação e personalização de soluções para atender às necessidades específicas de cada cliente.
+                <br><br>
+                Com uma equipe talentosa e dedicada, nós nos orgulhamos em sempre encontrar maneiras de desenvolver e entregar projetos de alta qualidade, sempre buscando superar as expectativas e ajudar a crescer e prosperar a sua empresa.
+                <br><br>
+                Descubra mais sobre nosso trabalho e descubra como podemos ajudar sua empresa a se destacar no mundo digital.
+              </p>
+            </div>
+            <div class="col-md-6 ">
+              <div class="main title">
+                <h1>Nossos valores: <div class="roller">
+                  <span id="rolltext" class="">Acessibilidade<br/>
+                  Oportunidade<br/>
+                  Inovação<br/>
+                  <span id="spare-time">O que mais precisa saber?</span></span><br/>
+                </div>
+                </h1>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section class="app-quem-somos">
     <div class="text-center title">
-        <h1>Quem <span>Somos</span>?</h1>
+      <h1><span>Nossa</span> Missão</h1>
+    </div>
+    <div class="information">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-6 ">
+            <div class="full justify-content-center align-content-center">
+              <div class="img">
+                <img ngSrc="./assets/image (2).png"  width="700" height="500" />
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+          <p>
+            O nome <span class="text-orange">Camale </span> <span class="text-blue"> Code</span> reflete nossa missão: assim como um camaleão se adapta ao seu ambiente, nós nos dedicamos a adaptar nossos clientes ao mercado de trabalho que está cada dia em constante evolução. Oferecemos soluções de software personalizadas para suas necessidades porque acreditamos que a flexibilidade é essencial para a inovação e o sucesso.
+            <br><br>
+            Com um atendimento personalizado e individualizado, descobriremos seus problemas e criaremos a melhor solução para melhorar o trabalho e os processos internos de sua empresa.
+          </p>
+        </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+</ng-container>
+
+<ng-template #enTemplate>
+  <section class="app-quem-somos" id="quem">
+    <div class="text-center title">
+      <h1>Who <span>are we</span>?</h1>
     </div>
     <div class="information">
       <div class="container">
@@ -8,22 +75,22 @@
           <div class="col-md-6">
             <p>
 
-                A <span class="text-orange">Camale </span> <span class="text-blue"> Code</span>  nasceu do sonho de um grupo de estudantes de programação do ensino médio, que se uniram visando transformar o mercado de desenvolvimento de software.
+              <span class="text-orange">Camale </span> <span class="text-blue"> Code</span>  was born from the dream of a group of programming students from a technical course, who came together with the goal of transforming the software development market.
               <br><br>
-              Fundada com a paixão pela tecnologia e inovação, nossa empresa se destaca pela capacidade de adaptação e personalização de soluções para atender às necessidades específicas de cada cliente.
+              Founded with a passion for technology and innovation, our company stands out for its ability to adapt and customize solutions to meet the specific needs of each client.
               <br><br>
-              Com uma equipe talentosa e dedicada, nós nos orgulhamos em sempre encontrar maneiras de desenvolver e entregar projetos de alta qualidade, sempre buscando superar as expectativas e ajudar a crescer e prosperar a sua empresa.
+              With a talented and dedicated team, we take pride in always finding ways to develop and deliver high-quality projects, constantly striving to exceed expectations and help your business grow and thrive.
               <br><br>
-              Descubra mais sobre nosso trabalho e descubra como podemos ajudar sua empresa a se destacar no mundo digital.
+              Learn more about our work and discover how we can help your company stand out in the digital world.
             </p>
           </div>
           <div class="col-md-6 ">
             <div class="main title">
-              <h1>Nossos valores: <div class="roller">
-                <span id="rolltext" class="">Acessibilidade<br/>
-                Oportunidade<br/>
-                Inovação<br/>
-                <span id="spare-time">O que mais precisa saber?</span></span><br/>
+              <h1>what is our values: <div class="roller">
+                  <span id="rolltext" class="">Accessibility<br/>
+                  Opportunity<br/>
+                  Innovation<br/>
+                  <span id="spare-time">What else do you need to know?</span></span><br/>
               </div>
               </h1>
 
@@ -32,32 +99,33 @@
         </div>
       </div>
     </div>
-</section>
+  </section>
 
-<section class="app-quem-somos">
-  <div class="text-center title">
-    <h1><span>Nossa</span> Missão</h1>
-  </div>
-  <div class="information">
-    <div class="container">
-      <div class="row">
+  <section class="app-quem-somos">
+    <div class="text-center title">
+      <h1><span>Our </span> mission</h1>
+    </div>
+    <div class="information">
+      <div class="container">
+        <div class="row">
 
-        <div class="col-md-6 ">
-          <div class="full justify-content-center align-content-center">
-            <div class="img">
-              <img ngSrc="./assets/image (2).png"  width="700" height="500" />
+          <div class="col-md-6 ">
+            <div class="full justify-content-center align-content-center">
+              <div class="img">
+                <img ngSrc="./assets/image (2).png"  width="700" height="500" />
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-6">
-        <p>
-          O nome <span class="text-orange">Camale </span> <span class="text-blue"> Code</span> reflete nossa missão: assim como um camaleão se adapta ao seu ambiente, nós nos dedicamos a adaptar nossos clientes ao mercado de trabalho que está cada dia em constante evolução. Oferecemos soluções de software personalizadas para suas necessidades porque acreditamos que a flexibilidade é essencial para a inovação e o sucesso.
-          <br><br>
-          Com um atendimento personalizado e individualizado, descobriremos seus problemas e criaremos a melhor solução para melhorar o trabalho e os processos internos de sua empresa.
-        </p>
-      </div>
+          <div class="col-md-6">
+            <p>
+              The name <span class="text-orange">Camale </span> <span class="text-blue"> Code</span> reflects our mission: just as a chameleon adapts to its environment, we are committed to adapting our clients to the ever-evolving job market. We offer customized software solutions tailored to your needs because we believe that flexibility is essential for innovation and success.
+              <br><br>
+              With personalized and individualized service, we will identify your challenges and create the best solution to improve your company's work and internal processes.
+            </p>
+          </div>
 
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+</ng-template>

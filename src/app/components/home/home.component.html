@@ -1,5 +1,28 @@
-<section class="app-home" id="home">
-  <div class="gradiente">
+<ng-container *ngIf="globalService.getLanguage() === 'pt'; else enTemplate">
+  <section class="app-home" id="home">
+    <div class="gradiente">
+
+        <div class="ttt">
+          <!--TODO-->
+          <!-- Resolver a responsibilidade-->
+
+          <div class="triangle">
+            <div class="title">
+              <img ngSrc="./assets/logo.png"  width="100" height="100" class="logo"/>
+              <h1>CAMALE <span>CODE</span></h1>
+              <p>A solução que sua empresa precisa</p>
+            </div>
+          </div>
+
+        </div>
+    </div>
+  </section>
+
+</ng-container>
+
+<ng-template #enTemplate>
+  <section class="app-home" id="home">
+    <div class="gradiente">
 
       <div class="ttt">
         <!--TODO-->
@@ -7,11 +30,13 @@
 
         <div class="triangle">
           <div class="title">
+            <img ngSrc="./assets/logo.png"  width="100" height="100" class="logo"/>
             <h1>CAMALE <span>CODE</span></h1>
-            <p>A solução que sua empresa precisa</p>
+            <p>The solution your company needs</p>
           </div>
         </div>
 
       </div>
-  </div>
-</section>
+    </div>
+  </section>
+</ng-template>

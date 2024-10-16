@@ -12,6 +12,27 @@ body{
 }
 
 
+a {
+  transition: none !important;
+}
+
+a:hover, a:focus, a:active {
+  text-decoration: none !important;
+  color: inherit !important; /* opcional, caso queira manter a cor padrão */
+  background-color: transparent !important; /* remove possíveis efeitos de fundo */
+}
+
+
+:host ::ng-deep a {
+  transition: none !important;
+}
+
+:host ::ng-deep a:hover, :host ::ng-deep a:focus, :host ::ng-deep a:active {
+  text-decoration: none !important;
+  color: inherit !important;
+  background-color: transparent !important;
+}
+
 
 
 
@@ -78,27 +99,4 @@ body{
   100% { background-position: 0 0; }
 }
 
-a {
-  color: #078fd9;
-  position: relative;
-  text-decoration: none;
-}
 
-a::before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 4px;
-  border-radius: 4px;
-  background-color: #078fd9;
-  bottom: 0;
-  left: 0;
-  transform-origin: right;
-  transform: scaleX(0);
-  transition: transform .3s ease-in-out;
-}
-
-a:hover::before {
-  transform-origin: left;
-  transform: scaleX(1);
-}

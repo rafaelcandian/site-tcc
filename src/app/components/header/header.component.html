@@ -1,6 +1,71 @@
+<ng-container *ngIf="globalService.getLanguage() === 'pt'; else enTemplate">
+  <div class="layer">
+    <div class="nav-layer">
+      <nav role="navigation">
+        <div id="menuToggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul id="Navmenu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#quem">Quem somos</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#planos">Planos</a></li>
+            <li><a href="#equipe">Equipe</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <li><a (click)="setLanguage('en')">Inglish</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="header">
 
+      <nav class="nav" >
+        <input id="menu" type="checkbox"  [checked]="isChecked">
+        <label for="menu"><img ngSrc="./assets/logo.png"  width="100" height="100" /></label>
+        <ul class="menu">
+          <li>
+            <a href="#home">
+              <span>Sobre nós</span>
+              <fa-icon [icon]="faIdCard"></fa-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#servicos">
+              <span>Serviços</span>
+              <fa-icon [icon]="faTasks"></fa-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#planos">
+              <span>Planos</span>
+              <i class="fas fa-users" aria-hidden="true"></i>
+              <fa-icon [icon]="faShoppingCart"></fa-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#contato">
+              <span>Contato</span>
+              <i class="fas fa-envelope-open-text" aria-hidden="true"></i>
+              <fa-icon [icon]="faPaperPlane"></fa-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#0" (click)="setLanguage('en')">
+              <span>Inglish</span>
+              <i class="fas fa-envelope-open-text" aria-hidden="true"></i>
+              <fa-icon [icon]="faLanguage"></fa-icon>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</ng-container>
 
-<div class="layer">
+<ng-template #enTemplate>
+  <div class="layer">
   <div class="nav-layer">
     <nav role="navigation">
       <div id="menuToggle">
@@ -10,11 +75,12 @@
         <span></span>
         <ul id="Navmenu">
           <li><a href="#home">Home</a></li>
-          <li><a href="#quem">Quem somos</a></li>
-          <li><a href="#servicos">Serviços</a></li>
-          <li><a href="#planos">Planos</a></li>
-          <li><a href="#equipe">Equipe</a></li>
-          <li><a href="#contato">Contato</a></li>
+          <li><a href="#quem">About us</a></li>
+          <li><a href="#servicos">Services</a></li>
+          <li><a href="#planos">Plans</a></li>
+          <li><a href="#equipe">Teeam</a></li>
+          <li><a href="#contato">Contact</a></li>
+          <li><a (click)="setLanguage('pt')">Português</a></li>
         </ul>
       </div>
     </nav>
@@ -27,33 +93,33 @@
       <ul class="menu">
         <li>
           <a href="#home">
-            <span>Sobre nós</span>
+            <span>About us</span>
             <fa-icon [icon]="faIdCard"></fa-icon>
           </a>
         </li>
         <li>
           <a href="#servicos">
-            <span>Serviços</span>
+            <span>Services</span>
             <fa-icon [icon]="faTasks"></fa-icon>
           </a>
         </li>
         <li>
           <a href="#planos">
-            <span>Planos</span>
+            <span>Plans</span>
             <i class="fas fa-users" aria-hidden="true"></i>
             <fa-icon [icon]="faShoppingCart"></fa-icon>
           </a>
         </li>
         <li>
           <a href="#contato">
-            <span>Contato</span>
+            <span>Contact</span>
             <i class="fas fa-envelope-open-text" aria-hidden="true"></i>
             <fa-icon [icon]="faPaperPlane"></fa-icon>
           </a>
         </li>
         <li>
-          <a href="#0">
-            <span>Linguas</span>
+          <a href="#0" (click)="setLanguage('pt')">
+            <span>Português</span>
             <i class="fas fa-envelope-open-text" aria-hidden="true"></i>
             <fa-icon [icon]="faLanguage"></fa-icon>
           </a>
@@ -62,3 +128,4 @@
     </nav>
   </div>
 </div>
+</ng-template>

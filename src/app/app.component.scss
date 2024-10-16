@@ -1,0 +1,20 @@
+a {
+  transition: none !important;
+}
+
+a:hover, a:focus, a:active {
+  text-decoration: none !important;
+  color: inherit !important; /* opcional, caso queira manter a cor padrão */
+  background-color: transparent !important; /* remove possíveis efeitos de fundo */
+}
+
+
+:host ::ng-deep a {
+  transition: none !important;
+}
+
+:host ::ng-deep a:hover, :host ::ng-deep a:focus, :host ::ng-deep a:active {
+  text-decoration: none !important;
+  color: inherit !important;
+  background-color: transparent !important;
+}

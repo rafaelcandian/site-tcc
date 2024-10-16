@@ -1,4 +1,5 @@
-<section class="container app-servico" id="servicos">
+<ng-container *ngIf="globalService.getLanguage() === 'pt'; else enTemplate">
+  <section class="container app-servico" id="servicos">
 
   <div class="text-center title">
     <h1>Nossos <span>Serviços</span></h1>
@@ -45,7 +46,7 @@
       <div class="servicos">
         <img ngSrc="./assets/mobile.PNG"  width="100" height="100" />
         <h5 class="card-title-1">Mobile</h5>
-        <p class="card-text">Desenvolvimento de aplicativos para celular.</p>
+        <p class="card-text">Desenvolvimento de <br> aplicativos para celular.</p>
       </div>
     </div>
 
@@ -60,3 +61,69 @@
   </div>
 
 </section>
+</ng-container>
+
+<ng-template #enTemplate>
+  <section class="container app-servico" id="servicos">
+
+    <div class="text-center title">
+      <h1>Our <span>Services</span></h1>
+    </div>
+    <div class="oqfazemos">
+      <hr><h1>What do we do?</h1>
+    </div>
+
+    <div class="row">
+
+      <div class="col">
+        <div class="servico">
+          <img ngSrc="./assets/sites.PNG"  width="100" height="100" />
+          <h5 class="card-title-1">Website</h5>
+          <p class="card-text">Responsive website development.</p>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="servico">
+          <img ngSrc="./assets/sistemas.PNG"  width="100" height="100" />
+          <h5 class="card-title-2">Systems</h5>
+          <p class="card-text">Development of personalized systems.</p>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="servico">
+          <img ngSrc="./assets/desing.PNG"  width="100" height="100" />
+          <h5 class="card-title-1">Desing UX</h5>
+          <p class="card-text">Creation of a <br> visual identity.</p>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="servico">
+          <img ngSrc="./assets/mentoria.PNG"  width="100" height="100" />
+          <h5 class="card-title-2">Mentoring</h5>
+          <p class="card-text">Design and marketing mentoring.</p>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="servicos">
+          <img ngSrc="./assets/mobile.PNG"  width="100" height="100" />
+          <h5 class="card-title-1">Mobile</h5>
+          <p class="card-text">Development of <br> mobile applications.</p>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="servico">
+          <img ngSrc="./assets/suporte.PNG"  width="100" height="100" />
+          <h5 class="card-title-2">Support</h5>
+          <p class="card-text">Technical support for hardware and software.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+</ng-template>
